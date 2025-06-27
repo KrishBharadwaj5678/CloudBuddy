@@ -46,3 +46,39 @@
    ```bash
    streamlit run app.py
    ```
+
+---
+
+## 🤝 How to Contribute 
+
+We welcome contributions!
+
+1. **Fork the Repository 🍴**
+
+2. **Clone Your Fork 💻**
+
+   ```bash
+   git clone https://github.com/KrishBharadwaj5678/CloudBuddy.git
+   ```
+
+3. **Create a Branch 🌱**
+
+   ```bash
+   git checkout -b feature-name
+   ```
+
+4. **Make Changes ✏️**
+
+5. **Commit Your Changes 📝**
+
+   ```bash
+   git commit -m "Describe the changes you made"
+   ```
+
+6. **Push to Your Fork 🚀**
+
+   ```bash
+   git push origin feature-name
+   ```
+
+7. **Create a Pull Request (PR) 🔄**
