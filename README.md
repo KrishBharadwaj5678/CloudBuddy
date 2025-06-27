@@ -16,7 +16,7 @@
 
 ---
 
-## ⚙️ Tech Stack 
+## 🧰 Tech Stack 
 
 | Technology        | Description                                           |
 | ----------------- | ----------------------------------------------------- |
@@ -26,7 +26,7 @@
 
 ---
 
-## How to Run Locally 🏠
+## ⚙️ Installation Guide
 
 1. **Clone the repository**:
 
