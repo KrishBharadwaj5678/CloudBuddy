@@ -41,7 +41,16 @@
    pip install -r requirements.txt
    ```
 
-3. **Run the app**:
+3. **Create the `.env` file**:
+
+   ```env
+   BOT_TOKEN=your_telegram_bot_token
+   CHAT_ID=your_telegram_chat_id
+   RAPIDAPI_KEY=your_rapidapi_key
+   RAPIDAPI_HOST=unlimited-cloud-storage.p.rapidapi.com
+   ```
+
+4. **Run the app**:
 
    ```bash
    streamlit run app.py
