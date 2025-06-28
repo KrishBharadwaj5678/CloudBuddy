@@ -1,6 +1,10 @@
 import streamlit as st
 import requests
 import os
+from dotenv import load_dotenv
+
+# Load environment variables
+load_dotenv()
 
 st.set_page_config(
     page_title="CloudBuddy – Your Cloud Storage Solution",
@@ -48,12 +52,12 @@ with tab1:
                         "document":(f"{fileName}",finalFile)
                     }
                     payload = {
-                        "botToken": "7147572018:AAF_uX7c5FbA_V5DoglL1AuQbtHTWnix1Yg",
-                        "chatId": "-1002230179133"
+                        "botToken": os.getenv("BOT_TOKEN"),
+                        "chatId": os.getenv("CHAT_ID")
                     }
                     headers = {
-                        "x-rapidapi-key": "c0e897e06bmshf1b07b02427bc79p1edb79jsn0132d0db5ef9",
-                        "x-rapidapi-host": "unlimited-cloud-storage.p.rapidapi.com",
+                        "x-rapidapi-key": os.getenv("RAPIDAPI_KEY"),
+                        "x-rapidapi-host": os.getenv("RAPIDAPI_HOST"),
                     }
 
                     response = requests.post(url, data=payload, files=files, headers=headers)
@@ -85,8 +89,8 @@ with tab2:
             querystring = {"fileId": f"{fileId}"}
 
             headers = {
-                "x-rapidapi-key": "c0e897e06bmshf1b07b02427bc79p1edb79jsn0132d0db5ef9",
-                "x-rapidapi-host": "unlimited-cloud-storage.p.rapidapi.com"
+                "x-rapidapi-key": os.getenv("RAPIDAPI_KEY"),
+                "x-rapidapi-host": os.getenv("RAPIDAPI_HOST")
             }
 
             try:
